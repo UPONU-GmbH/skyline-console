@@ -103,7 +103,7 @@ export class RestoreAction extends ModalAction {
   static policy = 'volume:create';
 
   static allowed = (item) => {
-    return Promise.resolve(item.status === 'available');
+    return true
   };
 
   onSubmit = (values) => {
